@@ -1,0 +1,29 @@
+{
+  "name": "rtmarkdown",
+  "version": "1.0.0",
+  "description": "Real-Time markdown editor with multiple user support",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callmeaatrey/markdown-rt.git"
+  },
+  "keywords": [
+    "realtime",
+    "markdown"
+  ],
+  "author": "Shikher Aatrey <shikher.a@gmail.com> (http://github.com/callmeaatrey)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callmeaatrey/markdown-rt/issues"
+  },
+  "homepage": "https://github.com/callmeaatrey/markdown-rt#readme",
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.4",
+    "redis": "2.4.2",
+    "share": "0.7.40"
+  }
+}
