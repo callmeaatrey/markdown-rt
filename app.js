@@ -6,7 +6,7 @@ require('redis');
 
 var options = {
 	db: {
-		type: 'redis',
+		type: 'redis', // Specifying the data store
 	}
 };
 
@@ -25,5 +25,7 @@ app.get('/(:id)', function(req, res) {
 
 sharejs.server.attach(app, options);
 
-var port = 8000;
-app.listen(port);
+var port = process.env.PORT | 8000; // Lets heroku decide the port
+app.listen(port, function() {
+	console.log("Application running locally at port:" + port);
+});
